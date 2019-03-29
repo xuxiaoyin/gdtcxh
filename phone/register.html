@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/phone.css"/>
+<title>手机端  注册页</title>
+<script type="text/javascript">
+	(function(){
+		var html = document.documentElement;
+		var htmlw = html.clientWidth;
+		html.style.fontSize = htmlw/15 + "px";
+	})();	
+</script>
+<script type="text/javascript" src="js/phone.js" ></script>
+</head>
+<body class="login">
+	<header id="header">
+		<a href="#" class="return">
+			<img src="images/return.png" />
+		</a>
+		<h1>注册</h1>
+	</header>
+	<div class="zw"></div>
+	<form class="form register">
+		<div>
+			<span class="name">用户名</span>
+			<input type="text" class="inp inp1" placeholder="用户名需字母开头，包括字母、数字、下划线 " />
+			<span class="line l-line"></span>
+			<span class="line r-line"></span>
+		</div>
+		<div>
+			<span class="name">设置密码</span>
+			<input type="password" class="inp inp1" placeholder="6-16个字符" />
+			<span class="line l-line"></span>
+			<span class="line r-line"></span>
+		</div>
+		<div>
+			<span class="name">确认密码 </span>
+			<input type="password" class="inp inp1" placeholder="确认密码 "/>
+			<span class="line l-line"></span>
+			<span class="line r-line"></span>
+		</div>
+		<div>
+			<span class="name">邮箱</span>
+			<input type="text" class="inp inp1" placeholder="请真是填写，邮箱是忘记密码，盗号取回账号的重要凭证" />
+			<span class="line l-line"></span>
+			<span class="line r-line"></span>
+		</div>
+		<div>
+			<span class="name">身份证号码  </span>
+			<input type="text" class="inp inp1"  placeholder="身份证号码 "/>
+			<span class="line l-line"></span>
+			<span class="line r-line"></span>
+		</div>
+		<div class="check">
+			<input type="checkbox" />
+			<a href="#">我已阅读并同意《广技网用户注册协议》</a>
+		</div>		
+		<input type="submit" value="注册"  class="sure" />
+	</form>
+	
+	
+
+</body>
+</html>

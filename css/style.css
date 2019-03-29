@@ -1,0 +1,152 @@
+/*cssRest*/
+body,p,ul,h1,h2,h3{ margin: 0;}
+ul{ padding: 0; list-style: none;}
+a{ text-decoration: none;}
+*{ color: #414141; font-family: "微软雅黑";}
+body{ background: url(../images/bd-bg.png);}
+img{ border: 0;}
+.english{ font-family: arial;}
+.left{ float: left;}
+.right{ float: right;}
+
+/*top*/
+.login-bar{ height: 30px; line-height: 30px; background: #2f2f2f; font-size: 12px; }
+.login-bar p{ width: 1200px; margin: 0 auto; color: #fff; font-size: 12px;}
+.login-bar a{ color: #fff;}
+.login-bar a:hover{ color: #b70b0b;}
+
+.g-member{ height: 134px; width: 1200px; margin: 0 auto; font-size: 14px;}
+.g-nav{ height: 60px; background: url(../images/nav-bg.png) repeat-x; z-index: 1; position: relative;}
+.g-banner{ height: 390px; overflow: hidden; margin-top: -10px; position: relative; width: 100%;}
+
+.u-title{ text-align: center; font-weight: normal; font-size: 30px; letter-spacing: 5px;}
+.u-title a{color: #1e1e1e; line-height: 48px; display: block; height: 48px;}
+.u-title span{ border-bottom: 2px solid #b70b0b; display: inline-block; margin: 0; height: 48px;}
+.u-title .english{ color: #878686; font-size: 12px; line-height: 30px; letter-spacing: 2px;}
+
+.g-member>div{ float: left;}
+.login{ height: 30px; line-height: 30px; margin: 52px 0;}
+.login a{ float: left; margin-right: 28px;}
+.login .inp{ height: 28px; width: 180px; padding: 0 10px; border: 1px solid #df9191; border-radius: 2px;}
+.login .btn{ width: 66px; height: 30px; background: #b70b0b; color: #fff; border: none; border-radius: 2px;}
+.g-member .pic{ margin: 10px 80px;}
+.g-member .link{ overflow: hidden;}
+.g-member .link a{ float: left; padding-top: 64px; margin-top: 26px; font-size: 16px;}
+.g-member .link a:hover{ color: #b70b0b;}
+.g-member .online{ background: url(../images/icon.png) no-repeat center 0; margin-right: 56px;}
+.g-member .check{ background: url(../images/icon01.png) no-repeat center 0;}
+
+.nav{ width: 1200px; margin: 0 auto; height: 48px;}
+.nav li{ float: left; margin: 0 18px;}
+.nav a{ line-height: 49px; font-size: 18px; color: #fff; display: block; padding: 0 10px;}
+.nav .active,.nav a:hover{ border-bottom: 2px solid #fff;}
+
+.banner{ position: absolute; left: 50%; margin-left: -960px;}
+.banner img{ display: none;}
+.logo{ position: absolute; top: 84px; left: 10%; z-index: 3;}
+.g-banner .btn{ position: absolute; z-index: 3; bottom: 0; width: 100%; height: 12px; padding: 10px 0; background: rgba(0,0,0,.3); text-align: center;}
+.g-banner .btn a{height: 10px; width: 10px; border-radius: 50%; border: 1px solid #b81010; margin: 0 5px; display: inline-block;}
+.g-banner .btn .active{ background: #b70b0b;}
+
+
+.news-center{ width: 1200px; margin: 20px auto;}
+.news-list{ overflow: hidden;}
+.news-list .left,.news-list .right{ width:564px;}
+.news-list .title{ height: 58px; line-height: 58px; font-weight: normal; border-bottom: 1px solid #dad9d7; position: relative; margin-bottom: 18px;}
+.news-list .title span{ font-size: 24px; position: absolute; border-bottom: 1px solid #b70b0b;}
+.news-list .title a{ color: #6e6e6e; float: right; font-size: 12px; line-height: 38px; margin-top: 20px;}
+.news-list .title a:hover{ color: #b70b0b;}
+.news-list .detail{ overflow: hidden;}
+.news-list .pic{ float: left; width: 224px; height: 182px; overflow: hidden; position: relative;}
+.news-list .pic img{ display: none;}
+.news-list .pic .btn{ position: absolute; left: 50%; margin-left: -45px; bottom: 10px;}
+.news-list .pic .btn a{ float: left; width: 24px; margin: 0 3px; height: 1px; background: #fff;}
+.news-list .pic .btn .active{ background: #b70b0b;}
+.news-list .text{ float: right; width: 328px;}
+.news-list .text h3{ font-weight: normal; font-size: 16px; padding-left: 10px; background: url(../images/dot.png) no-repeat 0 center; height: 24px; line-height: 24px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-bottom: 8px;}
+.news-list .text p{ font-size: 14px; color: #858585; line-height: 26px; margin-bottom: 8px; height: 52px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;}
+.news-list .detail li{ padding-left: 30px; height: 38px; line-height: 38px; font-size: 16px; background: url(../images/dot.png) no-repeat 11px center;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.news-list .detail a:hover{ color: #b70b0b;}
+
+.video{ height: 422px; width: 100%; background: url(../images/video-bg.png); margin-top: 60px; margin-bottom: 22px;}
+.video-list{ width: 1200px; margin: 0 auto; position: relative; padding-top: 60px;}
+.sorce video{ display: none; position: relative; z-index: 4;}
+.video-list .btn{ position: absolute; z-index: 4; height: 52px; width: 580px; top: 184px;}
+.video-list .btn a{width: 27px; height: 52px;}
+.video-list .btn .left{ background: url(../images/prve.png) no-repeat; margin-left: 18px;}
+.video-list .btn .right{ background: url(../images/next.png) no-repeat; margin-right: 18px;}
+.video-list .text-box{ height: 300px; width: 590px; padding-left: 310px; background: #b70b0b; position: absolute; left: 300px; top: 40px; }
+.video-list .text-box h1{ font-weight: normal; margin-top: 18px; margin-bottom: 10px;}
+.video-list .text-box h1 span{ display: block; color: #fff; font-size: 20px; line-height: 36px;}
+.video-list .text-box .english{ font-size: 36px; line-height: 50px;}
+.video-list .text-box p{ color: #fff; font-size: 14px; line-height: 28px; display: none;}
+
+.wonderful{ width: 1200px; margin: 0 auto;}
+.wonderful .pic{ margin-top: 10px; position: relative;}
+.wonderful .pic .title{ width: 728px; height: 500px; background:#b70b0b; padding-left: 50px; padding-top: 54px; position: absolute; top: -26px;}
+/*.wonderful .pic-list{ position: relative; z-index: 2; overflow: hidden;}
+.wonderful .pic-list img{ float: left; border: 20px solid #fff; width: 258px;}
+.wonderful .pic-list .pic1{ margin-left: 296px;}
+.wonderful .pic-list .bacg-gray{ border-color: #dcdbdb;}
+.wonderful .pic-list .bacg-red{ border-color: #b70b0b;}*/
+
+.footer{ width: 100%; height: 436px; background: #2f2f2f; margin-top: 92px;}
+.footer .list{ width:1200px; margin: 0 auto; }
+.footer p,.footer a,.footer div{color: #f6f6f6;}
+.footer p{ font-size: 20px; line-height: 70px;}
+.footer .friend-link{ overflow: hidden; padding-bottom: 30px; border-bottom: 1px solid #575757; margin-bottom: 30px;}
+.footer .friend-link a{ float: left; width: 160px; height: 52px; background: url(../images/friendship.png) no-repeat; margin: 5px;}
+.footer .friend-link .link1{ background-position: 0 0;}
+.footer .friend-link .link2{ background-position: -160px 0;}
+.footer .friend-link .link3{ background-position: -320px 0;}
+.footer .friend-link .link4{ background-position: -480px 0;}
+.footer .friend-link .link5{ background-position: -640px 0;}
+.footer .friend-link .link6{ background-position: -800px 0;}
+.footer .friend-link .link7{ background-position: -960px 0;}
+.footer .friend-link .link8{ background-position: 0 0;}
+.footer .friend-link .link9{ background-position: -160px 0;}
+.footer .friend-link .link10{ background-position: -320px 0;}
+.footer .friend-link .link11{ background-position: -480px 0;}
+.footer .friend-link .link12{ background-position: -640px 0;}
+.footer .friend-link .link13{ background-position: -800px 0;}
+.footer .friend-link .link14{ background-position: -960px 0;}
+.footer .code{ width: 300px; margin:0 auto; height: 90px; overflow: hidden;}
+.footer .code img{ float: left; margin: 0 5px;}
+.footer .menu,.copyright{ text-align: center; font-size: 14px; line-height: 30px;}
+.footer .menu{ margin-top: 18px;}
+.footer .menu a:hover{ color: #b70b0b;}
+
+.skills{ width: 1200px; margin: 30px auto; overflow: hidden;}
+.skills h3{ font-weight: normal;}
+.skills .left-menu{ width: 250px; border-top: 3px solid #b70b0b;}
+.skills .left-menu a{ display: block; height: 70px; line-height: 70px; background: #f1f1f1; border-bottom: 2px solid #fff; text-align: center; font-size: 18px;}
+.skills .left-menu .active,.skills .left-menu a:hover{ background: #b70b0b; color: #fff;}
+.skill-list{ width: 920px;}
+.location{ font-size: 18px; line-height: 20px; margin-bottom: 10px;}
+.location a:hover{ color:#b70b0b ;}
+.skill-list .title{ font-size: 18px; color: #b70b0b; height: 40px; line-height: 40px; border-bottom: 1px solid #dcdcdc; margin-bottom: 12px;}
+.skill-list .title a{ font-size: 14px; color: #818080; margin-top: 6px;}
+.skill-list .title a:hover{ color:#b70b0b;}
+.skill-list .hot{ height: 112px; margin-bottom: 25px;}
+.skill-list .hot img{ float: left; height: 112px;}
+.skill-list .hot .text{ margin-left: 208px;}
+.skill-list .hot h3{ font-size: 20px; height: 38px; line-height: 38px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.skill-list .hot p{ font-size: 14px; line-height: 26px;overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;}
+.skill-list .hot p a:hover,.regulations li a:hover{ color:#b70b0b ;}
+.skill-list .regulations li{ padding-left: 20px; line-height: 40px; font-size: 16px; background: url(../images/dot.png) no-repeat 0 center;}
+.regulations span{ font-size: 14px; color: #797979;}
+.skill-list .more li{ border-bottom: 1px dotted #dcdcdc;}
+
+.news{ width: 1200px; margin: 20px auto;}
+.article{ height: 1460px; overflow: hidden;}
+.article h1{ font-size: 20px; color: #1e1e1e; text-align: center; line-height: 42px; font-weight: 400; margin-top: 10px;}
+.article .info{ color: #6b6b6b; text-align: center; line-height: 28px; font-size: 14px;}
+.article .tip{ font-size: 14px; color: #606060; line-height: 28px; text-align: center; padding-bottom: 18px; border-bottom: 1px solid #f1cece;}
+.article .title{ margin-top: 18px;}
+.article .title span{ display: block; text-align: center;  font-size: 16px ; line-height: 28px;}
+.article p{ font-size: 16px; line-height: 28px; margin:12px 0;}
+.article p img{ display: block; width: 600px; margin: 0 auto;}
+#pages{font-size:18px; width:1200px; line-height:40px; text-align:center; margin: 20px auto;}
+#pages a,#pages b{margin-right: 10px;}
+#pages a:hover,.news .link a:hover{ color: #b70b0b;}
+.news .link a{ color: #1e1e1e; display: block; font-size: 16px; line-height: 44px;}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/phone.css"/>
+<title>手机端  登录页</title>
+<script type="text/javascript">
+	(function(){
+		var html = document.documentElement;
+		var htmlw = html.clientWidth;
+		html.style.fontSize = htmlw/15 + "px";
+	})();	
+</script>
+<script type="text/javascript" src="js/phone.js" ></script>
+</head>
+<body class="login">
+	<header id="header">
+		<a href="#" class="return">
+			<img src="images/return.png" />
+		</a>
+		<h1>登录</h1>
+		<a href="#" class="regist">注册</a>
+	</header>
+	<div class="zw"></div>
+	<form class="form">
+		<div>
+			<input type="text" class="inp inp1" placeholder="请输入您的用户名" />
+			<span class="line"></span>
+			<span class="line r-line"></span>
+		</div>
+		<div>
+			<input type="password" class="inp inp1" placeholder="请输入您的密码" />
+			<span class="line"></span>
+			<span class="line r-line"></span>
+		</div>		
+		<div>
+			<span class="all">所有项目</span>
+			<select class="inp">
+				<option>请选择</option>
+				<option>2018年全国全民健身操舞大赛广东分站赛南海区选拔赛暨南海区健美操比赛</option>
+			</select>
+			<span class="line"></span>
+			<span class="line r-line"></span>
+		</div>
+		<input type="submit" value="确定"  class="sure" />
+	</form>
+	
+	
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/phone.css"/>
+<title>手机端  培训报名</title>
+<script type="text/javascript">
+	(function(){
+		var html = document.documentElement;
+		var htmlw = html.clientWidth;
+		html.style.fontSize = htmlw/15 + "px";
+	})();	
+</script>
+<script type="text/javascript" src="js/phone.js" ></script>
+</head>
+<body class="login">
+	<header id="header">
+		<a href="#" class="return">
+			<img src="images/return.png" />
+		</a>
+		<h1>培训报名</h1>
+	</header>
+	<div class="zw"></div>
+	<form class="check-form">
+		<div class="list">
+			<span class="name">培训名称</span>
+			<select>
+				<option>请选择</option>
+				<option>2018</option>
+				<option>2017</option>
+				<option>2016</option>
+			</select>
+		</div>
+		<div class="list">
+			<span class="name">报名项目</span>
+			<select>
+				<option>请选择</option>
+				<option>体操</option>
+				<option>女子</option>
+				<option>男子</option>
+			</select>
+		</div>
+		<div class="list">
+			<span class="name">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</span>
+			<input type="text" />
+		</div>
+		<div class="list">
+			<span class="name">身份证号码</span>
+			<input type="text" />
+		</div>
+		<div class="list">
+			<span class="name">手&nbsp;&nbsp;&nbsp;机&nbsp;&nbsp;&nbsp;号</span>
+			<input type="text" />
+		</div>
+		<div class="list">
+			<span class="name">所在单位</span>
+			<input type="text" />
+		</div>
+		
+		<div class="list">
+			<span class="name">申报类别</span>
+			<input type="checkbox" name="classify" id="jly"/>
+			<label for="jly">教练员</label>
+			<input type="checkbox" name="classify" id="cpy"/>
+			<label for="cpy">裁判员</label>
+		</div>
+		<div class="list">
+			<span class="name">申报等级</span>
+			<select>
+				<option>请选择</option>
+				<option>体操</option>
+				<option>女子</option>
+				<option>男子</option>
+			</select>
+		</div>
+		
+		
+		<input type="submit" value="提交报名"  class="sure" />
+	</form>
+	
+	
+
+</body>
+</html>

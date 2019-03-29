@@ -1,0 +1,434 @@
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+<!--<script src="js/picjs.js" type="text/javascript" charset="utf-8"></script>-->
+</head>
+<body>
+<!--top-->
+<div class="top">
+	<div class="login-bar">
+		<p>您好，欢迎您来到广技网！ <a href="#">登录</a> | <a href="#">注册</a></p>
+	</div>
+	
+	<div class="g-member">
+		<div class="login">
+			<form action="#">
+				<label><a>用户名 ： <input type="text" class="inp"></a></label>
+				<label><a>密码 ： <input type="password" class="inp"></a></label>
+				<label><a><input type="submit" value="登录" class="btn"></a></label>
+			</form>
+		</div>
+		<div class="pic">
+			<img src="images/member.png" alt="会员中心" title="会员中心">
+		</div>
+		<div class="link">
+			<a href="#" class="online">在线报名</a>
+			<a href="#" class="check">证书查询</a>
+		</div>
+	</div>
+	
+	<div class="g-nav">
+		<ul class="nav">
+			<li><a href="index.html" class="active">首页</a></li>
+			<li><a href="skill.html">竞技体操 </a></li>
+			<li><a href="#">蹦床</a></li>
+			<li><a href="#">技巧</a></li>
+			<li><a href="#">艺术体操</a></li>
+			<li><a href="#">健美操舞</a></li>
+			<li><a href="#">啦啦操</a></li>
+			<li><a href="#">排舞广场舞</a></li>
+			<li><a href="#">快乐体操</a></li>
+			<li><a href="#">协会概况</a></li>
+		</ul>
+	</div>
+	
+	<div class="g-banner" id="banner">
+		<div class="banner picchange">
+			<a href="#"><img src="images/banner01.jpg"></a>
+			<a href="#"><img src="images/banner02.jpg"></a>
+			<a href="#"><img src="images/banner03.jpg"></a>
+		</div>
+		<div class="logo">
+			<img src="images/logo.png">
+		</div>
+		<div class="btn">
+			<a href="javascript"></a>
+			<a href="javascript"></a>
+			<a href="javascript"></a>
+		</div>
+	</div>
+</div>
+<!--top-->
+
+
+
+<script>
+changePic();
+	
+function changePic(){
+	var iNow=0;
+	function fn1(){
+		$('#banner .picchange img').fadeOut();
+		$('#banner .btn a').attr('class','');
+		$('#banner .picchange img:eq('+iNow+')').fadeIn();
+		$('#banner .btn a:eq('+iNow+')').attr('class','active');	
+	}
+	fn1();
+	
+	$('#banner .btn a').mouseover(function(){
+		iNow=$(this).index();
+		fn1();
+	})	
+	var timer2=null;
+	autoPlay();
+	function autoPlay(){
+		timer2=setInterval(function(){
+			if(iNow==$('#banner .btn a').length-1){
+				iNow=0;
+			}else{
+				iNow++;
+			}
+			
+			fn1();
+		},2000)
+	}
+	
+	$('#banner').mouseover(function(){
+		clearInterval(timer2);
+	}).mouseout(function(){
+		autoPlay();
+	})
+}
+
+
+	
+</script>
+
+
+<!--content-->
+<div class="content">
+	<!--news-center-->
+	<div class="news-center">
+		<h1 class="u-title">
+			<a>新<span>闻中</span>心</a>
+			<div class="english">News Center</div>
+		</h1>
+		<!--news-list-->
+		<div class="news-list">
+			<!--left-->
+			<div class="left">
+				<h2 class="title">
+					<span>新闻动态</span><a href="#">更多 ></a>
+				</h2>
+				<div id="pic2" class="detail">
+					<div id="xwdt" class="pic">
+						<div class="pic-list picchange">
+							<img src="images/news01.jpg" style="display: block;">
+							<img src="images/news02.jpg">
+							<img src="images/news01.jpg">
+						</div>
+						<div class="btn">
+							<a href="javascript" class="active"></a>
+							<a href="javascript"></a>
+							<a href="javascript"></a>
+						</div>
+					</div>
+					<div class="text">
+						<h3>2017-2020新周期广东省啦啦操裁2017-2020新周期广东省啦啦操裁</h3>
+						<p>2017-2020新周期广东省啦啦操裁判员、教练员等级培训班昨日进入最后一天的2017-2020新周期广东省啦啦操裁判员、教练员等级培训班昨日进入最后一天的</p>
+						<h3>2017-2020新周期广东省啦啦操裁2017-2020新周期广东省啦啦操裁</h3>
+						<p>2017-2020新周期广东省啦啦操裁判员、教练员等级培训班昨日进入最后一天的2017-2020新周期广东省啦啦操裁判员、教练员等级培训班昨日进入最后一天的</p>
+					</div>
+				</div>
+			</div>
+			<!--left-->
+			<!--right-->
+			<div class="right">
+				<h2 class="title">
+					<span>通知公告</span><a href="#">更多 ></a>
+				</h2>
+				<div class="detail">
+					<div id="tzgg" class="pic">
+						<div class="pic-list picchange">
+							<img src="images/news02.jpg"  style="display: block;">
+							<img src="images/news01.jpg">
+							<img src="images/news02.jpg">
+						</div>
+						<div class="btn">
+							<a href="javascript"></a>
+							<a href="javascript"></a>
+							<a href="javascript"></a>
+						</div>
+					</div>
+					<div class="text">
+						<h3>2017-2020新周期广东省啦啦操裁2017-2020新周期广东省啦啦操裁</h3>
+						<p>2017-2020新周期广东省啦啦操裁判员、教练员等级培训班昨日进入最后一天的2017-2020新周期广东省啦啦操裁判员、教练员等级培训班昨日进入最后一天的</p>
+						<h3>2017-2020新周期广东省啦啦操裁2017-2020新周期广东省啦啦操裁</h3>
+						<p>2017-2020新周期广东省啦啦操裁判员、教练员等级培训班昨日进入最后一天的2017-2020新周期广东省啦啦操裁判员、教练员等级培训班昨日进入最后一天的</p>
+					</div>
+				</div>
+			</div>
+			<!--right-->
+		</div>
+		<!--news-list-->
+		<!--news-list-->
+		<div class="news-list">
+			<!--left-->
+			<div class="left">
+				<h2 class="title">
+					<span>赛事规程</span><a href="#">更多 ></a>
+				</h2>
+				<div class="detail">
+					<ul>
+						<li><a href="#">2017第六届全国全民健身操舞大赛广东站赛事指南</a></li>
+						<li><a href="#">2017年全国全民健身操舞推广大赛（珠海站）竞赛日程安排</a></li>
+						<li><a href="#">关于举办2017年广东省健美操锦标赛的通知</a></li>
+						<li><a href="#">广东省健美操裁判员管理办法实施细则（试行版）</a></li>
+						<li><a href="#">关于举办2017-2020周期广东省健美操裁判员培训班的通知</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--left-->
+			<!--right-->
+			<div class="right">
+				<h2 class="title">
+					<span>协会活动</span><a href="#">更多 ></a>
+				</h2>
+				<div class="detail">
+					<ul>
+						<li><a href="#">必看！！网上报名流程及常见问题解决方法【竞技体操】</a></li>
+						<li><a href="#">广东省体操技巧协会在广东省第二届青少年体育嘉年华大放异彩广东省体操技巧协会在广东省第二届青少年体育嘉年华大放异彩</a></li>
+						<li><a href="#">2016年广东省青少年艺术体操锦标赛成绩单【艺术体操】</a></li>
+						<li><a href="#">2016年广东省青少年蹦床锦标赛成绩册【蹦床】</a></li>
+						<li><a href="#">2016年广东省青少年蹦床锦标赛秩序册【蹦床】</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--right-->
+		</div>
+		<!--news-list-->		
+	</div>
+	<!--news-center-->
+	<!--video-->
+	<div class="video">
+		<!--video-list-->
+		<div id="video" class="video-list">
+			<!--sorce-->
+			<div class="sorce">
+				<video class="myVideo" controls poster="images/source.png" width="580" height="300">
+					<source src="images/movie.ogg" type="video/ogg" />
+					<p>Your browser does not support the video tag.</p>
+				</video>
+				
+				<video class="myVideo" controls poster="images/pic1.png" width="580" height="300" >
+					<source src="images/movie.ogg" type="video/ogg" />
+					<p>Your browser does not support the video tag.</p>
+				</video>
+				
+				<video class="myVideo" controls poster="images/pic2.png" width="580" height="300" >
+					<source src="images/movie.ogg" type="video/ogg" />
+					<p>Your browser does not support the video tag.</p>
+				</video>
+			</div>
+			<!--sorce-->
+			<div class="btn">
+				<a href="javascript:" class="left"></a>
+				<a href="javascript:" class="right"></a>
+			</div>
+			<div class="text-box">
+				<h1><span class="english">VIDEO ZONE</span><span>视频专区</span></h1>
+				<p>内容一内容一内容一内容一内容一内容一内容一</p>
+				<p>内容二内容二内容二内容二内容二内容二内容二</p>
+				<p>内容三内容三内容三内容三内容三内容三内容三</p>
+			</div>
+		</div>
+		<!--video-list-->
+	</div>
+	<!--video-->
+
+<style>
+.wonderful .pic-list{position: relative; width: 1120px; margin: 0 auto; overflow: hidden; height: 278px;}
+#scroll{ position: absolute; left: 0; top: 0;}
+#scroll li{ float: left; width: 224px; height: 278px;}
+#scroll li img{ width: 200px; height: 250px; border: 8px solid #efece7;}
+.wonderful .btn{ width: 100%; height: 42px; position: absolute; left: 0; top: 112px;}
+.wonderful .btn a{ width: 24px; height: 42px;}
+#prveP{ float: left; background: url(images/PreBtn.jpg) no-repeat;}
+#nextP{ float: right; background: url(images/NextBtn.jpg) no-repeat;}
+.u-title{ position: relative;}
+.u-title .more{ position: absolute; top: 20px; right: 0; color: #6e6e6e; font-size: 12px;}
+</style>
+	<!--wonderful-->
+	<div class="wonderful">
+		<h1 class="u-title">
+			<a>精<span>彩图</span>片</a>
+			<div class="english">Wonderful Pictures</div>
+			<a class="more" href="#">更多></a>
+		</h1>
+		<div class="pic">
+			<div class="pic-list">
+				<ul id="scroll">
+					<li><a href="#"><img src="images/pic1.png"></a></li>
+					<li><a href="#"><img src="images/pic2.png"></a></li>
+					<li><a href="#"><img src="images/pic3.png"></a></li>
+					<li><a href="#"><img src="images/pic4.png"></a></li>
+					<li><a href="#"><img src="images/pic5.png"></a></li>
+					<li><a href="#"><img src="images/pic6.png"></a></li>
+					<li><a href="#"><img src="images/pic7.png"></a></li>
+				</ul>
+			</div>
+			<div class="btn">
+				<a href="javascript:" id="prveP"></a>
+				<a href="javascript:" id="nextP"></a>
+			</div>
+		</div>
+	</div>
+	<!--wonderful-->
+</div>
+<!--content-->
+
+<script>
+var oneWidth=$('#scroll li').outerWidth();
+var num=5;
+var btn=true;
+var timer1=null;
+function setWidth(){
+	$('#scroll').width(oneWidth*($('#scroll li').length));
+}
+setWidth();
+
+auto();
+function auto(){
+	timer1=setInterval(toNext,3000);
+}
+
+
+$('#nextP').click(function(){
+	clearInterval(timer1);
+	toNext();	
+}).mouseout(function(){
+	auto();
+});
+
+
+$('#prveP').click(function(){
+	clearInterval(timer1);
+	if(btn){
+		for(var i=0;i<num;i++){
+			var oLi=$('#scroll li').eq(num).clone(true);
+			$('#scroll').prepend(oLi);
+			$('#scroll').css('left',-num*oneWidth);
+			setWidth();
+		};
+		
+		btn=false;
+	};
+	
+	$('#scroll').animate({'left':0},function(){
+		for(var i=0;i<num;i++){
+			$('#scroll li').eq($('#scroll li').length-1).remove();
+			btn=true;
+		}
+	})
+	
+}).mouseout(function(){
+	auto();
+})
+
+function toNext(){
+	if(btn){
+		for(var i=0;i<num;i++){
+			var oLi=$('#scroll li').eq(i).clone(true);
+			$('#scroll').append(oLi);
+			setWidth();
+		};
+		btn=false;
+	};
+	
+	$('#scroll').animate({'left':-num*oneWidth},function(){
+		for(var i=0;i<num;i++){
+			$('#scroll li').eq(0).remove();
+			$('#scroll').css('left',0);
+			btn=true;
+		}
+	})
+}
+
+</script>
+<!--footer-->
+<div class="footer">
+	<div class="list">
+		<p>合作伙伴</p>
+		<div class="friend-link">
+			<a href="#" class="link1"></a>
+			<a href="#" class="link2"></a>
+			<a href="#" class="link3"></a>
+			<a href="#" class="link4"></a>
+			<a href="#" class="link5"></a>
+			<a href="#" class="link6"></a>
+			<a href="#" class="link7"></a>
+			<a href="#" class="link8"></a>
+			<a href="#" class="link9"></a>
+			<a href="#" class="link10"></a>
+			<a href="#" class="link11"></a>
+			<a href="#" class="link12"></a>
+			<a href="#" class="link13"></a>
+			<a href="#" class="link14"></a>
+		</div>
+		<div class="code">
+			<img src="images/code01.png">
+			<img src="images/code02.png">
+			<img src="images/code03.png">
+		</div>
+		<div class="menu">
+			<a href="#">技术支持</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="#">用户帮助</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">联系我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">访问统计：</a>
+		</div>
+		<div class="copyright">
+			Copyright © 2014 -2017 广东省体操技巧协会 All Right Reserved 粤ICP备16010629号
+		</div>
+	</div>
+</div>
+<!--footer-->
+<!--<script>
+changepic("xwdt");
+changepic("tzgg");
+
+var oVideo=document.getElementById("video");
+var aVideo=oVideo.getElementsByClassName("myVideo");
+var oBtn=oVideo.getElementsByClassName("btn")[0];
+var aBtn=oBtn.getElementsByTagName("a");
+var oText=oVideo.getElementsByClassName("text-box")[0];
+var aText=oText.getElementsByTagName("p");
+var n=0;
+function fnstart(){
+	for (var i=0;i<aVideo.length;i++) {
+		aVideo[i].style.display="none";
+		aText[i].style.display="none";
+	}
+	aVideo[n].style.display="block";
+	aText[n].style.display="block";
+}
+
+fnstart();
+aBtn[1].onclick=function(){
+	n++;
+	n%=aVideo.length;
+	fnstart();
+}
+aBtn[0].onclick=function(){
+	if (n==0) {
+		n=aVideo.length-1;
+	} else{
+		n--;
+	}			
+	fnstart();
+}
+
+
+
+</script>-->
+</body>
+</html>

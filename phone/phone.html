@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/phone.css"/>
+<title>手机端 首页</title>
+<script type="text/javascript">
+	(function(){
+		var html = document.documentElement;
+		var htmlw = html.clientWidth;
+		html.style.fontSize = htmlw/15 + "px";
+	})();	
+</script>
+<script type="text/javascript" src="js/phone.js" ></script>
+</head>
+<body>
+	<div class="header">
+		<div class="top-bar">
+			您好，欢迎您来到广技网！ <a href="#">登录广技网</a> | <a href="#">注册</a>
+		</div>
+		<div class="logo">
+			<img src="images/logo-01.png" />
+		</div>
+		<div class="member">
+			<div class="left">
+				<p>
+					<span class="name">用户名：</span>
+					<input type="text" />
+				</p>
+				<p>
+					<span class="name">密码：</span>
+					<input type="password" />
+				</p>
+			</div>
+			<div class="middle">
+				<button type="submit" class="btn">登录会员</button>
+				<a href="#" class="link">还没有账号？去注册</a>
+			</div>
+			<div class="right">
+				<img src="images/member.png" />
+			</div>
+		</div>
+	</div>
+	
+	
+	<style>
+
+
+
+
+.swiper-slide {
+	width: 100%;
+	-webkit-transition: transform 1.0s;
+	-moz-transition: transform 1.0s;
+	-ms-transition: transform 1.0s;
+	-o-transition: transform 1.0s;
+	/*-webkit-transform: scale(0.7);
+	transform: scale(0.7);*/
+}
+
+
+.swiper-slide-active,.swiper-slide-duplicate-active {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+
+.none-effect {
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+}
+
+.swiper-slide a {
+	background: #fff;
+	display: block;
+}
+
+
+
+.swiper-slide-active a:after {
+	background: none;
+}
+
+
+
+.swiper-slide img {
+	width: 100%;
+	display: block;
+}
+
+
+
+.swiper-pagination {
+	width:15rem;
+	height: 0.24rem;
+	padding: 0.24rem 0;
+	position: absolute;
+	bottom:0;
+	z-index: 1;
+	text-align:center;
+	background: rgba(0,0,0,.5);
+}
+
+.swiper-pagination-bullet {
+	width:0.64rem;
+	height: 0.16rem;
+	display: inline-block;
+	background: #fff;
+	border: 2px solid #fff;
+	vertical-align:top;
+	margin: 0 3px;
+}
+
+.swiper-pagination-bullet-active {
+	background: none;
+}
+
+
+
+    </style>
+	
+	
+	
+	<!--banner-->
+	<section class="banner banner01 pc-banner">
+		<div class="swiper-container">
+			<ul class="list swiper-wrapper">
+				<li class="swiper-slide swiper-slide-center none-effect">
+					<a href="#"><img src="images/banner01.jpg" alt="" /></a>
+				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="images/banner02.jpg" alt="" /></a>
+				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="images/banner03.jpg" alt="" /></a>
+				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="images/banner04.jpg" alt="" /></a>
+				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="images/banner05.jpg" alt="" /></a>
+				</li>
+			</ul>
+			<nav class="swiper-pagination">
+			</nav>
+		</div>
+	</section>
+	<!--banner-->
+	
+	<script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+	window.onload = function() {
+    var swiper = new Swiper('.swiper-container',{
+		autoplay:3000,
+		speed:1000,
+		autoplayDisableOnInteraction : false,
+		loop:true,
+		centeredSlides : true,
+		slidesPerView:2,
+        pagination : '.swiper-pagination',
+		paginationClickable:true,
+		onInit:function(swiper){
+			swiper.slides[2].className="swiper-slide swiper-slide-active";//第一次打开不要动画
+			},
+        breakpoints: { 
+                750: {
+                    slidesPerView: 1,
+                 }
+            }
+		});
+		
+	tab('.tab');
+		}
+    </script>
+	
+	
+	<!--content-->
+	<div class="content">
+		<section class="online">
+			<a href="#">在线报名</a>
+			<a href="#">证书查询</a>
+		</section>
+		
+		<!--tab-->
+		<section class="tab">
+			<h2 class="title">
+				<a href="javascript:" class="active report">通知公告</a>
+				<a href="javascript:">赛事规程</a>
+			</h2>
+			<ul class="list" style="display: block;">
+				<li>
+					<a href="#">必看！！网上报名流程及常见问题解决方法！</a>
+				</li>
+				<li>
+					<a href="#">通知║关于举办2018年南海区中小学健美操骨干教师培训班的通知!</a>
+				</li>
+				<li>
+					<a href="#">关于广东省体操技巧年度总结工作会议及举办蹦床裁判员培训班的通知</a>
+				</li>
+				<li>
+					<a href="#">关于广东省体操技巧年度总结工作会议及举办体操裁判员培训班的通知</a>
+				</li>
+				<li>
+					<a href="#">2017年广东省青少年艺术体操锦标赛成绩公告</a>
+				</li>
+			</ul>
+			
+			<ul class="list">
+				<li>
+					<a href="#">2018年第七届全国全民健身操舞大赛广东分站赛竞赛规程</a>
+				</li>
+				<li>
+					<a href="#">2017广东省青少年艺术体操锦标赛竞赛规程</a>
+				</li>
+				<li>
+					<a href="#">2017年广东省青少年艺术体操锦标赛补充通知</a>
+				</li>
+				<li>
+					<a href="#">2017年广东省青少年健美操锦标赛竞赛规程</a>
+				</li>
+				<li>
+					<a href="#">2017年广东省青少年健美操锦标赛补充通知</a>
+				</li>
+			</ul>
+		</section>
+		<!--tab-->
+		
+		<section class="news">
+			<h2 class="title">
+				<span>新闻动态</span>
+			</h2>
+			<!--<section class="banner banner02">
+				<ul class="list">
+					<li>
+						<a href="#"><img src="images/banner1.jpg" alt="" /></a>
+						<p>2017年广东省青少年健美操锦标赛补充通知</p>
+					</li>
+					<li>
+						<a href="#"><img src="images/banner2.jpg" alt="" /></a>
+						<p>2018年广东省青少年健美操锦标赛补充通知</p>
+					</li>
+					<li>
+						<a href="#"><img src="images/banner3.jpg" alt="" /></a>
+						<p>2019年广东省青少年健美操锦标赛补充通知</p>
+					</li>
+					<li>
+						<a href="#"><img src="images/banner2.jpg" alt="" /></a>
+						<p>2020年广东省青少年健美操锦标赛补充通知</p>
+					</li>
+					<li>
+						<a href="#"><img src="images/banner4.jpg" alt="" /></a>
+						<p>2021年广东省青少年健美操锦标赛补充通知</p>
+					</li>
+				</ul>
+				<nav>
+					<a class="active" id="active"></a>
+					<a class="sum" id="sum"></a>
+				</nav>
+			</section>-->
+			<section class="banner-pic">
+				<a href="#">
+					<img src="../images/banner1.jpg" />
+				</a>
+			</section>
+			
+			<ul class="new-list">
+				<li>
+					<a href="#">2018年第七届全国全民健身操舞大赛广东分站赛竞赛规程</a>
+				</li>
+				<li>
+					<a href="#">2017广东省青少年艺术体操锦标赛竞赛规程</a>
+				</li>
+				<li>
+					<a href="#">2017年广东省青少年艺术体操锦标赛补充通知</a>
+				</li>
+				<li>
+					<a href="#">2017年广东省青少年健美操锦标赛竞赛规程</a>
+				</li>
+				<li>
+					<a href="#">2017年广东省青少年健美操锦标赛补充通知</a>
+				</li>
+			</ul>
+
+		</section>
+	</div>
+	<!--content-->
+	<section class="footer">
+		Copyright © 2014 -2018 广东省体操技巧协会 All Right Reserved 粤ICP备16010629号
+	</section>
+	
+
+</body>
+</html>

@@ -1,0 +1,271 @@
+body {
+	margin: 0;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+h3,h1,h2{
+	margin: 0;
+}
+p {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+}
+mark {
+	background: none;
+}
+body,
+html {
+	position: relative;
+	font-size: 0.56rem; 
+}
+*{ font-family: helvetica; color: #1e1e1e;}
+
+.top-bar{
+	height: 1.2rem; 
+	border-bottom: 1px solid #eee;
+	line-height: 1.2rem;
+	padding: 0 0.4rem;
+	color: #666;
+}
+.top-bar a{
+	color: #666;
+}
+.logo img{
+	display: block;
+	width: 10.12rem;
+	height: 1.5rem;
+	margin: 28px auto 18px;
+}
+.logo{
+	border-bottom: 1px #b70b0b solid;
+}
+.member{
+	overflow: hidden;
+	padding: 0 0.4rem;
+	background: url(../images/bd-bg.png);
+	border-bottom: 0.1rem solid #b70a0c;
+}
+
+.member{
+	font-size: 0.48rem;
+}
+.member>div{ float: left;}
+
+.member .left{
+	width: 6.4rem;
+	margin-top: 0.52rem;
+}
+.member .name{
+	display: inline-block;
+	width: 2.3rem;
+	text-align: right;
+	line-height: 0.72rem;
+}
+.member .left input{
+	width: 3.2rem;
+	padding: 0 0.1rem;
+	height: 0.72rem;
+	border: 1px solid #e0908f;
+	border-radius: 4px;
+	outline: none;
+}
+.member .left p{
+	margin-bottom: 0.4rem;
+}
+.member .right img{
+	width: 3.2rem;
+}
+.member .middle{
+	margin-top: 0.52rem;
+}
+.member .btn{
+	display: block;
+	width: 3rem;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	background: #b70b0b;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 0.4rem;
+	border: none;
+	outline: none;
+}
+.member .link{
+	font-size: 0.4rem;
+	line-height: 1.2rem;
+}
+.member .right{
+	float: right;
+	margin-top: 0.6rem;
+}
+
+
+.banner{
+	height: 8.7rem;
+	position: relative;
+	overflow: hidden;
+}
+.banner .list{
+	padding: 0;
+	margin: 0;
+	width:400%;
+	position: absolute;
+	top:0;
+	left:0;
+	list-style: none;
+}
+.banner .list li{
+	float: left;
+	width:15rem;
+}
+.banner .list img{
+	position: relative;
+	height:8.7rem;
+	display: block;
+}
+.banner nav{
+	width:15rem;
+	height: 0.24rem;
+	padding: 0.24rem 0;
+	position: absolute;
+	bottom:0;
+	z-index: 1;
+	text-align:center;
+	background: rgba(0,0,0,.5);
+}
+.banner nav a{
+	width:0.64rem;
+	height: 0.16rem;
+	display: inline-block;
+	background: #fff;
+	border: 2px solid #fff;
+	vertical-align:top;
+}
+.banner nav a.active{
+	background: none;
+}
+
+.content{
+	background: url(../images/bd-bg.png);
+}
+.online{
+	 display: flex;
+	 padding: 0.64rem 0.4rem;
+}
+
+.online a{
+	margin: auto;
+	display: block;
+	width: 5.28rem;
+	height: 1.4rem;
+	background: #d21c1b;
+	color: #fff;
+	text-align: center;
+	line-height: 1.4rem;
+	font-size: 0.6rem;
+	border-radius: 0.2rem;
+	box-shadow: 0 0 10px rgba(0,0,0,.4);
+}
+
+.tab{
+	padding: 0 0.4rem;
+}
+.tab .title{
+	text-align: center;
+	margin: 0.2rem auto 0.56rem;
+	font-size: 0.6rem;
+	height: 1rem;
+	line-height: 1rem;
+}
+.tab .title a{
+	display: inline-block;
+	padding: 0 0.2rem;
+}
+.tab .report{ margin-right: 1.52rem;}
+.tab .title .active{
+	border-bottom: solid 0.12rem #d21b1d;
+	color: #d21b1d;
+}
+.tab .list{
+	display: none;
+	font-size: 0.56rem;
+}
+.new-list{
+	font-size: 0.56rem;
+	padding: 0 0.4rem;
+}
+.tab .list li,.new-list li{
+	height: 1.28rem;
+	line-height: 1.28rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding-left: 0.56rem;
+	background: url(../images/dot-01.png) no-repeat left center;
+	background-size: 0.28rem;
+}
+.news{
+	margin-top: 0.68rem;
+}
+.news .title{
+	height: 1.28rem;
+	line-height: 1.28rem;
+	border-bottom: 0.12rem solid #bfbfbf;
+	font-size:  0.56rem;
+}
+.news .title span{
+	display: inline-block;
+	height: 1.28rem;
+	line-height: 1.28rem;
+	border-bottom: 0.12rem solid #d31b1d;
+	padding: 0 0.4rem;
+}
+
+.banner02 .list li{
+	position: relative;
+}
+
+.banner02 .list p{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	background: rgba(0,0,0,.5);
+	color: #fff;
+	width: 100%;
+	text-indent: 0.4rem;
+	overflow: hidden;
+}
+
+.banner02 nav{
+	text-align: right;
+	z-index: 3;
+	height: 1.2rem;
+	background: none;
+	padding: 0;
+	line-height: 1.2rem;
+	color: #fff;
+	font-size: 0.6rem;
+}
+.banner02 nav a{
+	width: 0.6rem;
+	background: none;
+	border: none;
+	text-align: center;
+	color: #fff;
+}
+.banner02 nav .sum{
+	padding-right: 0.4rem;
+}
+.banner02 nav #active{
+	font-size: 0.8rem;
+	color: #fa0100;
+}
